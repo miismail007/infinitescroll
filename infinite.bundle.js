@@ -53,7 +53,10 @@ function Index() {
 function mountInfinite() {
   var includeInDom = _export__WEBPACK_IMPORTED_MODULE_2__["default"];
   var targetElement = document.querySelector("#infinite");
-  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(targetElement);
+  var root;
+  if (!root) {
+    root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(targetElement);
+  }
   root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Index, {}));
 }
 
