@@ -51,6 +51,7 @@ function Index() {
   });
 }
 function mountInfinite() {
+  var _window$infiniteRoot;
   var includeInDom = _export__WEBPACK_IMPORTED_MODULE_2__["default"];
   // const targetElement: any = document.querySelector("#infinite");
   // if (!window.infiniteRoot) {
@@ -67,7 +68,7 @@ function mountInfinite() {
   }
 
   // Check if the root exists, if not, create it
-  if (!window.infiniteRoot || targetElement !== window.infiniteRoot._internalRoot.containerInfo) {
+  if (!window.infiniteRoot || targetElement !== ((_window$infiniteRoot = window.infiniteRoot) === null || _window$infiniteRoot === void 0 || (_window$infiniteRoot = _window$infiniteRoot._internalRoot) === null || _window$infiniteRoot === void 0 ? void 0 : _window$infiniteRoot.containerInfo)) {
     window.infiniteRoot = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(targetElement);
   }
 
