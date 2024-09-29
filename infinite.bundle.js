@@ -240,10 +240,10 @@ function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "container mx-auto p-6",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      className: "flex justify-between items-center mb-6",
+      className: "flex justify-between items-center mb-6 bg-white shadow-md sticky top-0 z-10",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
         className: "text-2xl font-bold",
-        children: "Shopping Cart"
+        children: "Infinity Scroll"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_InfinityScroll__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
