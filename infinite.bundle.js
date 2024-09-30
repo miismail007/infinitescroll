@@ -206,8 +206,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ "./src/index.tsx");
 
 var infinite = {
-  init: function init() {
-    (0,___WEBPACK_IMPORTED_MODULE_0__.mountInfinite)();
+  init: function init(elementId) {
+    (0,___WEBPACK_IMPORTED_MODULE_0__.mountInfinite)(elementId);
   }
 };
 window.infinite = infinite;
@@ -248,10 +248,10 @@ function App() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_InfinityScroll__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
   });
 }
-function mountInfinite() {
+function mountInfinite(elementId) {
   var _window$infiniteRoot;
   var includeInDom = _export__WEBPACK_IMPORTED_MODULE_2__["default"];
-  var targetElement = document.querySelector("#infinite");
+  var targetElement = document.querySelector("#".concat(elementId));
 
   // Check if target element exists
   if (!targetElement) {
